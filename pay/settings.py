@@ -26,7 +26,7 @@ SECRET_KEY = 'njmgi=ex+=p1lq^4r0$ue(ea9k-!037ezdz05$a$s7@mtr*n74'
 # SECURITY WARNING: don't run with debug turned on in production!
 DEBUG = True
 
-ALLOWED_HOSTS = []
+ALLOWED_HOSTS = ['diol.herokuapp.com', 'localhost', 'http://127.0.0.1:8000/']
 
 
 # App1\lication definition
