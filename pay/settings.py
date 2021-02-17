@@ -26,7 +26,7 @@ SECRET_KEY = 'njmgi=ex+=p1lq^4r0$ue(ea9k-!037ezdz05$a$s7@mtr*n74'
 # SECURITY WARNING: don't run with debug turned on in production!
 DEBUG = True
 
-ALLOWED_HOSTS = ['diol.herokuapp.com', 'localhost', 'http://127.0.0.1:8000/']
+ALLOWED_HOSTS = ['diol.herokuapp.com', 'localhost', '127.0.0.1', '*']
 
 
 # App1\lication definition
@@ -130,3 +130,5 @@ CRISPY_TEMPLATE_PACK = 'bootstrap4'
 LOGIN_REDIRECT_URL = '/'
 
 LOGOUT_REDIRECT_URL = '../../accounts/login/'
+
+STATIC_ROOT = os.path.join(BASE_DIR, 'static')
