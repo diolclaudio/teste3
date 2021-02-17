@@ -1,0 +1,40 @@
+{% extends 'pays/base.html'%}
+
+{% block content%}
+<div class="offset-1 col-10">
+  <h2>Tabela de pagamentos</h2>
+  <table id="tabelaspec">
+    <tr><td class="ce">Classe</td><td class="cd">Valor</td></tr>
+    <tr><td class="ce">1</td><td class="cd">100mt</td></tr>
+    <tr><td class="ce">2</td><td class="cd">200mt</td></tr>
+    <tr><td class="ce">3</td><td class="cd">300mt</td></tr>
+    <tr><td class="ce">4</td><td class="cd">400mt</td></tr>
+    <tr><td class="ce">5</td><td class="cd">500mt</td></tr>
+    <tr><td class="ce">6</td><td class="cd">600mt</td></tr>
+    <tr><td class="ce">7</td><td class="cd">700mt</td></tr>
+    <tr><td class="ce">8</td><td class="cd">800mt</td></tr>
+    <tr><td class="ce">9</td><td class="cd">900mt</td></tr>
+    <tr><td class="ce">10</td><td class="cd">1000mt</td></tr>
+    <tr><td class="ce">11</td><td class="cd">1100mt</td></tr>
+  </table>
+  <h2>Mais informacoes</h2>
+
+  <p>Com o avanco tecnonologico da escola, brevemente as matriculas serao feitas apartir deste site via online.</p>
+  <p>Nao so matriculas serao feitas via online, Mas tambem a convocacao de encarregados para reunioes, A verificacao de pautas, As novas turmas.
+  A lista dos professores de cada classe e cada turma os horarios, E ate os melhores alunos</p>
+
+
+  <h2>Como podemos melhorar o site?</h2>
+  <p>Adicione o seu comentário:<a href="/comentario/">comentar</a></p>
+  <h3>Comentarios</h3>
+  <ul>
+    {% for com in comentario%}
+      <li class="com">{{com.data|date:'M d, Y H:i' }}</li>
+      <li class="com-com">{{com}}</li>
+    {% empty%}
+      <li>Não tem comentarios ainda</li>
+    {%endfor%}
+  </ul>
+</div>
+
+{% endblock content%}

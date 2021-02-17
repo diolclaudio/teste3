@@ -1,0 +1,54 @@
+{% extends 'pays/base.html'%}
+{% load crispy_forms_tags%}
+{% block content%}
+<div class="offset-1 col-10">
+  <h1>Fazendo pagamentos</h1>
+
+    {% if messages%}
+      <ul class="messages">
+          {% for message in messages%}
+            <li {% if message.tags%}class="alert alert-{{message.tags}}"{% endif%}>{{message}}</li>
+          {% endfor %}
+      </ul>
+    {% endif %}
+
+<form action="." method="post">
+    {% csrf_token%}
+    {{form|crispy}}
+
+    <br>
+    <br>
+    <div id="paypal-button-container"></div>
+
+    <!-- Include the PayPal JavaScript SDK -->
+    <script src="https://www.paypal.com/sdk/js?client-id=Ab7i5SEXtQpPpJwtClI_bV6SrETyUX_WFk633idTc1k7q0rz6NdfCq1C6VVcMTlnMB4nNJIiV-zIhGqy&currency=USD"></script>
+
+    <script>
+        // Render the PayPal button into #paypal-button-container
+        paypal.Buttons({
+
+            // Set up the transaction
+            createOrder: function(data, actions) {
+                return actions.order.create({
+                    purchase_units: [{
+                        amount: {
+                            value: '0.1'
+                        }
+                    }]
+                });
+            },
+
+            // Finalize the transaction
+            onApprove: function(data, actions) {
+                return actions.order.capture().then(function(details) {
+                    // Show a success message to the buyer
+                    alert('Transaction completed by ' + details.payer.name.given_name + '!');
+                });
+            }
+
+
+        }).render('#paypal-button-container');
+    </script>
+</form>
+</div>
+{% endblock content%}

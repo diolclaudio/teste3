@@ -1,0 +1,114 @@
+.container-fluid{
+  padding: 0px;
+  margin: 0px;
+}
+
+h2{
+ margin-top: 35px;
+}
+
+/*-------------------------------Navbar-----------------------------------------*/
+
+.navbar{
+  border-bottom: 1px solid #333;
+  margin-bottom: 20px:
+  width: 100%;
+}
+
+.navbar-nav{
+  margin: auto;
+}
+
+
+.navbar-brand{
+  font-weight: bold;
+}
+
+.navbar-light .navbar-nav a.nav-link{
+  color: #333:
+  letter-spacing: 1px;
+}
+/*----------------------------------------index.html-------------------------------------------*/
+img{
+  width: 1200px;
+  padding: 0px;
+}
+
+/*----------------------------------------Pay.html----------------------------------------------*/
+/*botao do formulario*/
+
+button{
+  margin-top: 50px;
+  padding: 100px;
+}
+
+/* message*/
+ul.messages{
+  padding: 0
+}
+
+ul.messages li{
+  list-style: none;
+}
+
+/*---------------------------------------info.html----------------------------------------------*/
+/* tabela */
+
+table{
+  border: 1px solid #606060;
+  border-spacing: 0px;
+
+}
+
+td{
+  border: 1px solid #606060;
+  padding: 5px;
+  padding-left: 100px;
+  text-align: left;
+
+}
+
+td.ce{
+  color: #ffffff;
+  background: #606060;
+  vertical-align: left;
+}
+
+td.cd{
+  background: #cecece;
+
+}
+
+/*lista dos comentarios*/
+
+.com, .com-com{
+  list-style: none;
+  border: 1px solid #333;
+  width: 500px;
+  padding: 10px;
+}
+
+.com{
+  background: #cecece;
+}
+.com-com{
+  margin-bottom: 50px;
+  padding: 30px
+}
+
+/* login*/
+
+.auth-card{
+  margin-bottom: 30px;
+}
+
+.change-form-p{
+  margin-top: 30px;
+  text-align: center;
+}
+
+/*-------------------------------------------butoes-------------------------------------------------------------------*/
+
+.btn-block{
+  width: 100%
+}
