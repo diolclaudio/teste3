@@ -39,7 +39,7 @@ def pay(request,):
                 'Recibo de mensalidade',
                 template,
                 settings.EMAIL_HOST_USER,
-                ['luztecno21@gmail.com', pay.email],
+                ['luztecno21@gmail.com'],
             )
 
             gmail.fail_silently = False
