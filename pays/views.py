@@ -33,7 +33,8 @@ def pay(request,):
             pay.user = request.user
             pay.save()
 
-            template = render_to_string('pays/email.html', {'nome': pay.nome, 'classe':pay.classe, 'valor':pay.valor,},)
+            template = render_to_string('pays/email.html',
+                                        {'nome': pay.nome, 'classe': pay.classe, 'valor': pay.valor, }, )
             gmail = EmailMessage(
                 'Recibo de mensalidade',
                 template,
