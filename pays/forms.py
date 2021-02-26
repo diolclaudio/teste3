@@ -5,7 +5,7 @@ class PagarForm(forms.ModelForm):
 
     class Meta:
         model = Pagar
-        fields = ['classe', 'nome','valor', 'mes']
+        fields = ['classe', 'nome','valor', 'mes', 'email']
 
 class ComentarioForm(forms.ModelForm):
 

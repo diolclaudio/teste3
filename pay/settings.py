@@ -124,11 +124,21 @@ USE_TZ = True
 STATIC_URL = '/static/'
 
 #crispy_forms
-
 CRISPY_TEMPLATE_PACK = 'bootstrap4'
 
+#Redericionamento de login e logout
 LOGIN_REDIRECT_URL = '/'
 
 LOGOUT_REDIRECT_URL = '../../accounts/login/'
 
 STATIC_ROOT = os.path.join(BASE_DIR, 'static')
+
+
+#Configuracoes de e-mail automatico
+
+EMAIL_BACKEND = 'django.core.mail.backends.smtp.EmailBackend'
+EMAIL_HOST = 'smtp.gmail.com'
+EMAIL_PORT = 587
+EMAIL_USE_TLS = True
+EMAIL_HOST_USER = 'diolclaudio21@gmail.com'
+EMAIL_HOST_PASSWORD = 'diol1234'

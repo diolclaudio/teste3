@@ -9,6 +9,7 @@ class Pagar(models.Model):
     valor = models.DecimalField(max_digits=10, decimal_places=5)
     mes = models.CharField('mês', choices=[('Janeiro', 'Janeiro'), ('Fevereiro', 'Fevereiro'),
                                            ('Março', 'Março'), ('Abril', 'Abril'), ('Maio', 'Maio'), ('Junho', 'Junho'), ('Julho', 'Julho'), ('Agosto', 'Agosto'), ('Setembro', 'Setembro'), ('Outubro', 'Outubro'), ('Novembro', 'Novembro'), ('Desembro', 'Desembro')], max_length=20)
+    email = models.EmailField(max_length=50)
     user = models.ForeignKey(get_user_model(), on_delete = models.DO_NOTHING)
     def __str__(self):
         return self.nome

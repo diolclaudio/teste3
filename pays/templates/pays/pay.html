@@ -16,11 +16,14 @@
     {% csrf_token%}
     {{form|crispy}}
 
-    <br>
-    <br>
-    <div id="paypal-button-container"></div>
+    <button name='submit' class="btn btn-primary btn-block">Salvar dados do/a aluno/a
+    </button>
 
-    <!-- Include the PayPal JavaScript SDK -->
+    <br>
+    <br>
+    <div class="offset-1 col-10" id="paypal-button-container"></div>
+
+     <!-- Include the PayPal JavaScript SDK -->
     <script src="https://www.paypal.com/sdk/js?client-id=Ab7i5SEXtQpPpJwtClI_bV6SrETyUX_WFk633idTc1k7q0rz6NdfCq1C6VVcMTlnMB4nNJIiV-zIhGqy&currency=USD"></script>
 
     <script>
@@ -49,6 +52,7 @@
 
         }).render('#paypal-button-container');
     </script>
+
 </form>
 </div>
 {% endblock content%}
