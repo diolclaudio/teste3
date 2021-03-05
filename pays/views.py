@@ -78,4 +78,7 @@ def comentario(request):
         form = ComentarioForm()
         return render(request, 'pays/comentario.html', {'form': form})
 
+def listas(request):
+    return render(request, 'pays/listas.html', )
+
 
