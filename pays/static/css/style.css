@@ -7,7 +7,16 @@ h2{
  margin-top: 35px;
 }
 
+i{
+  margin left: 50px;
+  color: blue;
+}
+
 /*-------------------------------Navbar-----------------------------------------*/
+
+nav{
+  background: blue;
+}
 
 .navbar{
   border-bottom: 1px solid #333;
@@ -32,6 +41,10 @@ h2{
 img{
   width: 1200px;
   padding: 0px;
+}
+
+.titulo{
+  text-align: center;
 }
 
 /*----------------------------------------Pay.html----------------------------------------------*/
@@ -70,12 +83,12 @@ td{
 
 td.ce{
   color: #ffffff;
-  background: #606060;
+  background-color: #0088ff;
   vertical-align: left;
 }
 
 td.cd{
-  background: #cecece;
+  background-color: #e3f2fd;
 
 }
 
@@ -111,4 +124,16 @@ td.cd{
 
 .btn-block{
   width: 100%
+}
+
+/*-------------------------------------------listas---------------------------------------------------------------------*/
+
+.lista{
+  margin-bottom: 20px
+}
+
+/*-------------------------------------------Rodape---------------------------------------------------------------------*/
+.rodape{
+  text-align: center;
+  margin-top: 20px;
 }
