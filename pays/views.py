@@ -82,3 +82,8 @@ def listas(request):
     return render(request, 'pays/listas.html', )
 
 
+def res(request):
+    return render(request, 'pays/res.html', )
+
+def oita(request):
+    return render(request, 'pays/oita.html',)

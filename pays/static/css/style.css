@@ -3,6 +3,9 @@
   margin: 0px;
 }
 
+background{
+
+}
 h2{
  margin-top: 35px;
 }
@@ -41,6 +44,7 @@ nav{
 img{
   width: 1200px;
   padding: 0px;
+  height: 100px;
 }
 
 .titulo{
