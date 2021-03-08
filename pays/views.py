@@ -87,3 +87,12 @@ def res(request):
 
 def oita(request):
     return render(request, 'pays/oita.html',)
+
+def nona(request):
+    return render(request, 'pays/nona.html')
+
+def dec(request):
+    return render(request, 'pays/dec.html')
+
+def onze(request):
+    return render(request, 'pays/onze.html')

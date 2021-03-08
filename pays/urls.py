@@ -11,5 +11,8 @@ urlpatterns = [
     path('comentario/', views.comentario, name='comentario'),
     path('listas/', views.listas, name='listas'),
     path('res/', views.res, name='res'),
-    path('oita/', views.oita, name='oita'),
+    path('oitava/', views.oita, name='oita'),
+    path('nona/', views.nona, name='nona'),
+    path('decima/', views.dec, name='dec'),
+    path('onze/', views.onze, name='onze'),
 ]
